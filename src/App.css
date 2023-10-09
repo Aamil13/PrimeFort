@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hslacolor{
+  background:  hsla(240, 59%, 7%, .35);
+}
+
+
+.aa {
+  color: #FFF;
+ text-decoration: none;
+ /* transition: 1s;  */
+ display: inline-block;
+position: relative;
+
+} 
+
+.aa::after{
+ content: '';
+ position: absolute;
+ width: 100%;
+ transform: scaleX(0);
+ height: 1px;
+ bottom: 0;
+ left: 0;
+ background-color: white;
+ transform-origin: bottom left;
+ transition: transform 0.25s ease-out;
+ color: #FFF;
+}
+
+.aa:hover::after{
+ transform: scaleX(1);
+transform-origin: bottom left;
+color: #FFF;
+}
+
+.aa:hover{
+ color: white !important;
+
+}  
