@@ -134,7 +134,7 @@ const Navbar = ({isTopOfPage,}: Props) => {
 
             {/* Mobile menu//// */}
            {!isAboveMediumScreens && isMenuToggled && (
-            <div className="fixed left-0 bottom-0 z-40 h-full w-[50%] bg-[#0e0e30] drop-shadow-xl">
+            <div className="fixed left-0 bottom-0 z-40 h-full w-[50%] max-sm:w-full bg-[#0e0e30] drop-shadow-xl">
 
                
                     {/* Menu items //// */}
